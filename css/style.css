@@ -95,7 +95,7 @@ nav {
   color: #272D4E;
 }
 
-.first__page__center__left__container__subtitle {
+.subtitle {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -125,7 +125,7 @@ nav {
   outline: none;
 }
 
-.first__page__center__left__container__href {
+.href {
   padding-top: 55px;
   padding-left: 12px;
   font-family: Roboto;
@@ -135,7 +135,7 @@ nav {
   line-height: 25px;
   color: #94A2B3;
 }
-.first__page__center__left__container__href a {
+.href a {
   color: #29AAF3;
   text-decoration: none;
   font-weight: bold;
@@ -514,4 +514,195 @@ nav {
   width: 457px;
   color: #272D4E;
   padding-bottom: 56px;
+}
+
+.second__page__blockone {
+  width: 430px;
+  height: 600px;
+  float: left;
+  margin-left: 220px;
+  position: relative;
+}
+
+.second__page__blockone__applePay {
+  position: absolute;
+  left: -30px;
+  top: 40px;
+}
+
+.second__page__block__text {
+  margin-left: 50px;
+  margin-top: -20px;
+  width: 440px;
+}
+
+.second__page__block__title {
+  font-family: Circular Std Book;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 70px;
+  color: #272D4E;
+}
+
+.second__page__block__title__subtitle {
+  margin-top: -20px;
+}
+
+.second__page__block__text__href {
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.second__page__blockone__changing {
+  position: absolute;
+  top: 100px;
+  left: -52px;
+  width: 202px;
+  height: 264px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.second__page__blockone__changing__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  padding-left: 5px;
+}
+
+.second__page__blockone__changing__subtitle {
+  font-family: Roboto;
+  font-size: 6px;
+  line-height: 10px;
+  padding-left: 5px;
+}
+
+.second__page__blockone__changing__stripe {
+  display: flex;
+  width: 192px;
+  height: 50px;
+  margin-left: 4px;
+  border: 1px solid #29AAF3;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 5px;
+  position: relative;
+}
+
+.second__page__blockone__changing__stripe__blockOne {
+  width: 15%;
+}
+
+.second__page__blockone__changing__stripe__blockTwo {
+  width: 48%;
+}
+
+.second__page__blockone__changing__stripe__blockThree {
+  width: 35%;
+}
+
+.second__page__blockone__changing__stripe__img {
+  width: 25px;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+
+.second__page__blockone__changing__stripe__checkbox {
+  margin-top: 5px;
+  width: 5px;
+}
+
+.second__page__blockone__changing__stripe__textbox {
+  width: 60px;
+  height: 7px;
+  font-size: 5px;
+}
+
+.second__page__blockone__changing__paypal {
+  display: flex;
+  width: 192px;
+  height: 50px;
+  margin-left: 4px;
+  border: 1px solid #29AAF3;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 5px;
+  position: relative;
+}
+
+.second__page__blocktwo {
+  width: 430px;
+  height: 600px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 75px;
+  position: relative;
+}
+
+.facebooklogo {
+  position: absolute;
+  content: "";
+  top: 110px;
+  left: 50px;
+}
+
+.googleAdslogo {
+  position: absolute;
+  content: "";
+  bottom: 170px;
+  right: 60px;
+}
+
+.jetpacklogo {
+  position: absolute;
+  content: "";
+  top: 140px;
+  right: -10px;
+}
+
+.mailchimplogo {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: -70px;
+}
+
+.squarelogo {
+  position: absolute;
+  content: "";
+  top: -40px;
+  left: 50px;
+}
+
+.second__page__blockthree {
+  width: 430px;
+  height: 600px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 150px;
+  position: relative;
+}
+
+.photooneblockthree {
+  position: absolute;
+  content: "";
+  top: -130px;
+  right: -60px;
+}
+
+.phototwoblockthree {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 30px;
+}
+
+.photothreeblockthree {
+  position: absolute;
+  content: "";
+  top: 115px;
+  right: -170px;
 }
