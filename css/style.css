@@ -181,6 +181,10 @@ nav {
   border: 4px solid #7854F7;
 }
 
+.green {
+  border: 4px solid #70C217;
+}
+
 .firstPageSneakers {
   position: absolute;
   top: 270px;
@@ -705,4 +709,158 @@ nav {
   content: "";
   top: 115px;
   right: -170px;
+}
+
+.third__page {
+  margin-top: 958px;
+  width: 100%;
+  height: 1110px;
+  background: url("../img/thirdpage/woo.svg") no-repeat top right, #7854F7;
+  position: relative;
+}
+.third__page::before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.third__page::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.third__page__center__table__one {
+  position: absolute;
+  content: "";
+  top: 376px;
+  left: 250px;
+}
+
+.third__page__center__table__two {
+  position: absolute;
+  content: "";
+  top: 752px;
+  left: 1595px;
+}
+
+.third__page__circle__one {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 65px;
+  top: 127px;
+  left: 217px;
+}
+
+.third__page__circle__two {
+  position: absolute;
+  content: "";
+  width: 401px;
+  height: 401px;
+  top: 172px;
+  left: 237px;
+}
+
+.third__page__circle__three {
+  position: absolute;
+  content: "";
+  width: 262px;
+  height: 262px;
+  top: 536px;
+  left: 1441px;
+}
+
+.third__page__circle__four {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 65px;
+  top: 514px;
+  left: 1236px;
+  z-index: 3;
+}
+
+.background__circle {
+  border: 5px solid #FFBA49;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.third__page__planing {
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  left: 1070px;
+  z-index: 2;
+}
+
+.third__page__chinaGirls {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: 300px;
+  z-index: 2;
+}
+
+.text__one {
+  left: 845px;
+  top: 97px;
+}
+
+.text__two {
+  left: 595px;
+  top: 590px;
+}
+
+.third__page__information {
+  position: absolute;
+  content: "";
+  width: 485px;
+  height: 400px;
+}
+
+.third__page__title {
+  width: 80%;
+  font-family: Circular Std Book;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+
+.third__page__subtitle {
+  padding-top: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.third__page__button {
+  margin-top: 40px;
+  width: 256px;
+  height: 64px;
+  background: #70C217;
+  border-radius: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
 }
