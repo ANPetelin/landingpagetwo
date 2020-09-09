@@ -400,6 +400,108 @@ nav {
   outline: none;
 }
 
+.first__page__center__right__container__payment {
+  padding-left: 19px;
+  position: absolute;
+  width: 387px;
+  height: 248px;
+  left: 1057px;
+  top: 600px;
+  background: #FFFFFF;
+  border-radius: 23px;
+}
+
+.first__page__center__right__container__payment__strip {
+  width: 368px;
+  border-bottom: 1px solid #E5EFFF;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.first__page__center__right__container__payment__paypal {
+  width: 368px;
+  border-bottom: 1px solid #E5EFFF;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.first__page__center__right__container__payment__bank {
+  width: 368px;
+  position: relative;
+}
+
+.logopayment {
+  margin-left: 27px;
+  margin-top: 23px;
+  float: left;
+}
+
+.paypal__logo {
+  margin-top: 13px;
+}
+
+.bank__logo {
+  margin-left: 60px;
+}
+
+.first__page__center__right__container__payment__text {
+  margin-left: 44px;
+  margin-top: 28px;
+  float: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  color: #94A2B3;
+}
+
+.paypal__text {
+  margin-left: 33px;
+}
+
+.bank__text {
+  margin-left: 65px;
+}
+
+.toggle {
+  opacity: 0;
+}
+.toggle + label:before {
+  position: absolute;
+  content: "";
+  right: 23px;
+  margin-top: 25px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 47px;
+  height: 24px;
+  background: #DAE5F7;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+.toggle + label::after {
+  margin-top: 25px;
+  content: "";
+  position: absolute;
+  right: 48px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7854F7;
+  transition: 0.4s;
+}
+.toggle:checked + label:before {
+  background: #70C217;
+  transition: 0.4s;
+}
+.toggle:checked + label:after {
+  right: 30px;
+  background: #fff;
+  transition: 0.4s;
+}
+
 .first__page__footer__text {
   padding-top: 250px;
   text-align: center;
@@ -411,4 +513,5 @@ nav {
   line-height: 70px;
   width: 457px;
   color: #272D4E;
+  padding-bottom: 56px;
 }
