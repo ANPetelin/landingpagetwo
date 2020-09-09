@@ -70,6 +70,12 @@ nav {
   padding-left: 220px;
 }
 
+.first__page__center:after {
+  content: "";
+  display: table;
+  width: 100%;
+}
+
 .first__page__center__left__container {
   width: 48%;
   float: left;
@@ -129,4 +135,57 @@ nav {
   color: #29AAF3;
   text-decoration: none;
   font-weight: bold;
+}
+
+.first__page__center__right__container {
+  position: relative;
+}
+
+.first__page__center__table__one {
+  position: absolute;
+  content: "";
+  left: 1230px;
+  top: 130px;
+}
+
+.first__page__center__table__two {
+  position: absolute;
+  content: "";
+  left: 830px;
+  top: 270px;
+}
+
+.first__page__center__table__three {
+  position: absolute;
+  content: "";
+  left: 1430px;
+  top: 700px;
+}
+
+.circle {
+  width: 0;
+  height: 0;
+  margin: 0 53px 53px 0;
+  border-radius: 50%;
+}
+
+.blue {
+  border: 4px solid #29AAF3;
+}
+
+.violet {
+  border: 4px solid #7854F7;
+}
+
+.first__page__footer__text {
+  padding-top: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  width: 457px;
+  color: #272D4E;
 }
