@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 body {
   width: 1920px;
-  height: 5958px;
   overflow-x: hidden;
 }
 
@@ -45,7 +43,6 @@ nav {
   color: #272D4E;
   text-decoration: none;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -64,7 +61,6 @@ nav {
   border-radius: 4px;
   margin-right: 38px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -89,7 +85,6 @@ nav {
 
 .first__page__center__left__container__title {
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 85px;
   line-height: 95px;
@@ -98,8 +93,6 @@ nav {
 
 .subtitle {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   padding-top: 30px;
@@ -119,7 +112,6 @@ nav {
   border: none;
   color: #fff;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -130,8 +122,6 @@ nav {
   padding-top: 55px;
   padding-left: 12px;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   color: #94A2B3;
@@ -215,7 +205,6 @@ nav {
   outline: none;
   text-transform: uppercase;
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 32px;
@@ -263,7 +252,6 @@ nav {
   margin-top: 46px;
   margin-left: 40px;
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
@@ -277,8 +265,6 @@ nav {
   margin-top: 46px;
   margin-left: 9px;
   font-family: Circular Std Book;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #868686;
@@ -288,8 +274,6 @@ nav {
   margin-top: 87px;
   margin-left: 40px;
   font-family: Circular Std Book;
-  font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   line-height: 38px;
   color: #222222;
@@ -307,8 +291,6 @@ nav {
   background: #F6F6F6;
   border-radius: 5px;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 9px;
   line-height: 11px;
   color: #868686;
@@ -321,7 +303,6 @@ nav {
   margin-left: 40px;
   float: left;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -334,7 +315,6 @@ nav {
   margin-left: -33px;
   float: left;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -355,8 +335,6 @@ nav {
   background: #F6F6F6;
   border-radius: 5px;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   color: #222222;
@@ -400,8 +378,6 @@ nav {
   background: #7854F7;
   border-radius: 5px;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   color: #FFFFFF;
@@ -458,8 +434,6 @@ nav {
   margin-top: 28px;
   float: left;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 25px;
   color: #94A2B3;
@@ -515,7 +489,6 @@ nav {
   text-align: center;
   margin: 0 auto;
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 55px;
   line-height: 70px;
@@ -548,7 +521,6 @@ nav {
 
 .second__page__block__title {
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 70px;
@@ -576,7 +548,6 @@ nav {
 
 .second__page__blockone__changing__title {
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   line-height: 15px;
@@ -741,7 +712,7 @@ nav {
   width: 100%;
   height: 60px;
   background-color: #fff;
-  border-radius: 1920em/30em;
+  border-radius: 1920px/30px;
   z-index: 1;
 }
 
@@ -840,7 +811,6 @@ nav {
 .third__page__title {
   width: 80%;
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 46px;
@@ -850,8 +820,6 @@ nav {
 .third__page__subtitle {
   padding-top: 13px;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: #FFFFFF;
@@ -864,7 +832,6 @@ nav {
   background: #70C217;
   border-radius: 32px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -944,7 +911,6 @@ nav {
   text-align: center;
   margin: 0 auto;
   font-family: Circular Std Book;
-  font-style: normal;
   font-weight: bold;
   font-size: 55px;
   line-height: 70px;
@@ -1123,4 +1089,197 @@ nav {
   height: 4px;
   background: #000;
   transition: 0.4s;
+}
+
+.fifth__page {
+  width: 100%;
+  height: 1495px;
+  position: relative;
+  background: url("../img/fifthpage/backgroundcircle.svg") no-repeat center top 265px;
+}
+
+.fifth__page__table__one {
+  position: absolute;
+  content: "";
+  top: 386px;
+  left: 83px;
+}
+
+.fifth__page__table__two {
+  position: absolute;
+  content: "";
+  top: 257px;
+  left: 1566px;
+}
+
+.fifth__page__header__title {
+  text-align: center;
+  margin: 0 auto;
+  font-family: Circular Std Book;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  color: #272D4E;
+  margin-top: -35px;
+  width: 650px;
+}
+
+.fifth__page__header__subtitle {
+  margin: 0 auto;
+  padding-top: 31px;
+  width: 660px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #94A2B3;
+}
+
+.fifth__page__circle__one {
+  position: absolute;
+  content: "";
+  top: 201px;
+  left: 100px;
+  width: 61px;
+  height: 61px;
+}
+
+.fifth__page__circle__two {
+  position: absolute;
+  content: "";
+  top: 329px;
+  left: 194px;
+  width: 34px;
+  height: 34px;
+}
+
+.fifth__page__circle__three {
+  position: absolute;
+  content: "";
+  top: 167px;
+  left: 1614px;
+  width: 43px;
+  height: 43px;
+}
+
+.fifth__page__people {
+  position: absolute;
+  content: "";
+  top: 132px;
+  left: 305px;
+}
+
+.fifth__page__block__getStarted {
+  margin-top: 274px;
+  width: 100%;
+  height: 261px;
+  background-color: #5F37EF;
+}
+
+.fifth__page__block__getStarted__text {
+  padding-top: 78px;
+  width: 855px;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.fifth__page__block__getStarted__button {
+  margin-top: -90px;
+  float: right;
+  margin-right: 200px;
+  width: 207px;
+  height: 72px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 36px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  background-color: transparent;
+}
+
+.fifth__page__block__aboutus {
+  width: 100%;
+  height: 741px;
+  background-color: #7854F7;
+  position: relative;
+}
+.fifth__page__block__aboutus::after {
+  position: absolute;
+  content: "";
+  top: 326px;
+  left: 220px;
+  width: 1480px;
+  height: 0;
+  border-bottom: 1px solid #9A7DFF;
+}
+
+.fifth__page__block__aboutus__block img {
+  float: left;
+  padding-left: 118px;
+  padding-top: 45px;
+}
+.fifth__page__block__aboutus__block p {
+  padding-top: 40px;
+  padding-left: 15px;
+  float: left;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+.fifth__page__block__aboutus__block:first-child img {
+  padding-left: 348px;
+}
+
+.fifth__page__block__aboutus__logo {
+  margin-left: 868px;
+  margin-top: 140px;
+}
+
+.fifth__page__block__aboutus__table {
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.fifth__page__block__aboutus__table thead {
+  font-size: 14px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+.fifth__page__block__aboutus__table tbody {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: normal;
+}
+.fifth__page__block__aboutus__table td {
+  padding: 0 69px;
+}
+
+.fifth__page__block__footer {
+  padding-left: 194px;
+}
+.fifth__page__block__footer img {
+  display: inline;
+  padding-top: 26px;
+  padding-left: 54px;
+}
+.fifth__page__block__footer p {
+  padding: 0 346px 0 283px;
+  display: inline;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 22px;
+  color: #272D4E;
 }
