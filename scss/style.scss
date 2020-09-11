@@ -3,8 +3,27 @@ $colorViolet: #7854F7;
 $colorBlue: #29AAF3;
 $colorGreen: #70C217;
 $colorGray: #868686;
+$colorRed: #EF4358;
 $ffRoboto: Roboto;
 $ffCircular: Circular Std Book;
+
+@mixin absolute ($top, $left) {    
+    position: absolute;
+    content: '';
+    top: $top;
+    left: $left;
+}
+
+@mixin header__text {
+    text-align: center;
+    margin: 0 auto;    
+    font-family: $ffCircular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    color: $mainTextColor;
+}
 
 * {
     margin: 0;
@@ -193,6 +212,10 @@ nav {
 
 .green {
     border: 4px solid $colorGreen;
+}
+
+.red {
+    border: 4px solid $colorRed;
 }
 
 .firstPageSneakers {
@@ -495,7 +518,7 @@ nav {
         transition: .4s;          
     }
 
-    & + label::after {
+    & + label:after {
         margin-top: 25px;
         content: '';
         position: absolute;
@@ -520,21 +543,14 @@ nav {
     }
   }
 
-.first__page__footer__text {
-    padding-top: 250px;
-    text-align: center;
-    margin: 0 auto;    
-    font-family: $ffCircular;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 55px;
-    line-height: 70px;
+//Second Page
+
+.second__page__header__text {
+    @include header__text();    
     width: 457px;
-    color: $mainTextColor;
+    padding-top: 255px;
     padding-bottom: 56px;
 }
-
-//Second Page
 
 .second__page__blockone {
     width: 430px;
@@ -544,10 +560,8 @@ nav {
     position: relative;
 }
 
-.second__page__blockone__applePay {
-    position: absolute;
-    left: -30px;
-    top: 40px;
+.second__page__blockone__applePay {    
+    @include absolute(40px, -30px);
 }
 
 .second__page__block__text {
@@ -664,38 +678,23 @@ nav {
 }
 
 .facebooklogo {
-    position: absolute;
-    content: '';
-    top: 110px;
-    left: 50px;
+    @include absolute(110px, 50px);
 }
 
 .googleAdslogo {
-    position: absolute;
-    content: '';
-    bottom: 170px;
-    right: 60px;
+    @include absolute(249px, 153px);
 }
 
 .jetpacklogo {
-    position: absolute;
-    content: '';
-    top: 140px;
-    right: -10px;
+    @include absolute(140px, 229px);
 }
 
 .mailchimplogo {
-    position: absolute;
-    content: '';
-    top: 25px;
-    right: -70px;
+    @include absolute(25px, 289px);
 }
 
-.squarelogo {
-    position: absolute;
-    content: '';
-    top: -40px;
-    left: 50px;
+.squarelogo {    
+    @include absolute(-40px, 50px);
 }
 
 .second__page__blockthree {
@@ -708,24 +707,15 @@ nav {
 }
 
 .photooneblockthree {
-    position: absolute;
-    content: '';
-    top: -130px;
-    right: -60px;
+    @include absolute(-130px, 270px);
 }
 
 .phototwoblockthree {
-    position: absolute;
-    content: '';
-    top: -50px;
-    left: 30px;
+    @include absolute(-50px, 30px);
 }
 
 .photothreeblockthree {
-    position: absolute;
-    content: '';
-    top: 115px;
-    right: -170px;
+    @include absolute(115px, 325px);
 }
 
 // Third page
@@ -743,7 +733,7 @@ nav {
         width: 100%;
         height: 60px;
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 1920px/30px;
         z-index: 1;
     }
     &::after {
@@ -753,59 +743,41 @@ nav {
         width: 100%;
         height: 60px;
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 1920em/30em;
         z-index: 1;
     }
 }
 
 .third__page__center__table__one {
-    position: absolute;
-    content: '';
-    top: 376px;
-    left: 250px;
+    @include absolute(376px, 250px);
 }
 
 .third__page__center__table__two {
-    position: absolute;
-    content: '';
-    top: 752px;
-    left: 1595px;
+    @include absolute(752px, 1595px);
 }
 
 .third__page__circle__one {
-    position: absolute;
-    content: '';
+    @include absolute(127px, 217px);
     width: 65px;
     height: 65px;
-    top: 127px;
-    left: 217px;
 }
 
 .third__page__circle__two {
-    position: absolute;
-    content: '';
+    @include absolute(172px, 237px);
     width: 401px;
     height: 401px;
-    top: 172px;
-    left: 237px;
 }
 
 .third__page__circle__three {
-    position: absolute;
-    content: '';
+    @include absolute(536px, 1441px);
     width: 262px;
     height: 262px;
-    top: 536px;
-    left: 1441px;
 }
 
 .third__page__circle__four {
-    position: absolute;
-    content: '';
+    @include absolute(514px, 1236px);
     width: 65px;
     height: 65px;
-    top: 514px;
-    left: 1236px;
     z-index: 3;
 }
 
@@ -816,34 +788,24 @@ nav {
 }
 
 .third__page__planing {
-    position: absolute;
-    content: '';
-    bottom: -40px;
-    left: 1070px;
+    @include absolute(520px, 1070px);
     z-index: 2;
 }
 
 .third__page__chinaGirls {
-    position: absolute;
-    content: '';
-    top: -50px;
-    left: 300px;
+    @include absolute(-50px, 300px);  
     z-index: 2;
 }
 
 .text__one {
-    left: 845px;
-    top: 97px;
+    @include absolute(97px, 845px); 
 }
 
 .text__two {
-    left: 595px;
-    top: 590px;
+    @include absolute(590px, 595px); 
 }
 
 .third__page__information {
-    position: absolute;
-    content: '';
     width: 485px;
     height: 400px;
 }
@@ -884,3 +846,190 @@ nav {
     outline: none;
 }
 
+//fourth__page
+
+.fourth__page {
+    margin-top: 100px;
+    width: 100%;
+    height: 1209px;
+    background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+    position: relative;
+}
+
+.fourth__page__table__one {  
+    @include absolute(660px, 450px);  
+}
+
+.fourth__page__table__two {    
+    @include absolute(407px, 1342px);
+}
+
+.fourth__page__photo11 {
+    @include absolute(223px, 391px);
+    width: 136px;
+    height: 136px;
+    background: url("../img/fourthpage/photo11.png") no-repeat center top;
+}
+
+.fourth__page__photo12 {
+    @include absolute(438px, 102px);
+}
+
+.fourth__page__photo13 {
+    @include absolute(780px, 256px);
+}
+
+.fourth__page__photo21 {
+    @include absolute(209px, 1378px);
+}
+
+.fourth__page__photo22 {
+    @include absolute(466px, 1533px);    
+}
+
+.fourth__page__photo23 {
+    @include absolute(844px, 1435px);
+}
+
+.fourth__page__header__text {
+    @include header__text();
+    padding-top: 138px;
+    width: 530px;
+}
+
+.fourth__page__information {
+    margin: 0 auto;
+    margin-top: 103px;
+    position: relative;
+    width: 730px;
+    height: 391px;    
+    background: url("../img/fourthpage/twocommas.svg") no-repeat center top 28px, #fff;
+    box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+    border-radius: 20px;
+    z-index: 3;
+    position: relative;
+    &::before {  
+        @include absolute(391px, 26px);   
+        border-radius: 0 0  20px 20px;
+        background: linear-gradient( to bottom, rgba(215, 228, 249), rgba(234, 242, 255));
+        width: 678px;
+        height: 28px;
+        z-index: 2;
+    }
+    &::after {  
+        @include absolute(419px, 56px);   
+        border-radius: 0 0  20px 20px;
+        background: linear-gradient( to bottom, rgba(215, 228, 249), rgba(234, 242, 255));
+        width: 618px;
+        height: 20px;
+        z-index: 2;
+    }
+}
+
+.fourth__page__information__text {    
+    font-family: $ffCircular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 39px;
+    text-align: center;
+    color: #94A2B3;
+    padding: 106px 82px 87px 82px;
+}
+
+.fourth__page__information__forward__arrow {
+    @include absolute(500px, 600px);
+    width: 31px;
+    height: 2px;
+    background: rgb(127, 127, 127);
+    transition: .4s;
+    &:before {
+        @include absolute(-3px, 23px);
+        width: 10px;
+        height: 2px;
+        background: rgb(127, 127, 127);
+        transform: rotate(45deg);
+        transition: .4s;
+    }
+    &:after {
+        @include absolute(3px, 23px);
+        width: 10px;
+        height: 2px;
+        background: rgb(127, 127, 127);
+        transform: rotate(-45deg);        
+        transition: .4s;
+    }
+
+    &:hover {
+        @include absolute(498px, 581px);
+        width: 50px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+
+    &:hover:before {
+        @include absolute(-4px, 38px);
+        width: 15px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+
+    &:hover:after {
+        @include absolute(4px, 38px);
+        width: 15px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+}
+
+.fourth__page__information__back__arrow {
+    
+    @include absolute(500px, 500px);
+    width: 31px;
+    height: 2px;
+    background: rgb(127, 127, 127);
+    transition: .4s;
+    &:before {
+        @include absolute(-3px, -3px);
+        width: 10px;
+        height: 2px;
+        background: rgb(127, 127, 127);
+        transform: rotate(-45deg);
+        transition: .4s;
+    }
+    &:after {
+        @include absolute(3px, -3px);
+        width: 10px;
+        height: 2px;
+        background: rgb(127, 127, 127);
+        transform: rotate(45deg);        
+        transition: .4s;
+    }
+
+    &:hover {
+        @include absolute(498px, 500px);
+        width: 50px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+
+    &:hover:before {
+        @include absolute(-4px, -3px);
+        width: 15px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+
+    &:hover:after {
+        @include absolute(4px, -3px);
+        width: 15px;
+        height: 4px;
+        background: #000;
+        transition: .4s;
+    }
+}

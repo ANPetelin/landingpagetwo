@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 1px solid red;
 }
 
 body {
@@ -183,6 +184,10 @@ nav {
 
 .green {
   border: 4px solid #70C217;
+}
+
+.red {
+  border: 4px solid #EF4358;
 }
 
 .firstPageSneakers {
@@ -484,7 +489,7 @@ nav {
   border-radius: 12px;
   transition: 0.4s;
 }
-.toggle + label::after {
+.toggle + label:after {
   margin-top: 25px;
   content: "";
   position: absolute;
@@ -506,8 +511,7 @@ nav {
   transition: 0.4s;
 }
 
-.first__page__footer__text {
-  padding-top: 250px;
+.second__page__header__text {
   text-align: center;
   margin: 0 auto;
   font-family: Circular Std Book;
@@ -515,8 +519,9 @@ nav {
   font-weight: bold;
   font-size: 55px;
   line-height: 70px;
-  width: 457px;
   color: #272D4E;
+  width: 457px;
+  padding-top: 255px;
   padding-bottom: 56px;
 }
 
@@ -530,8 +535,9 @@ nav {
 
 .second__page__blockone__applePay {
   position: absolute;
-  left: -30px;
+  content: "";
   top: 40px;
+  left: -30px;
 }
 
 .second__page__block__text {
@@ -656,22 +662,22 @@ nav {
 .googleAdslogo {
   position: absolute;
   content: "";
-  bottom: 170px;
-  right: 60px;
+  top: 249px;
+  left: 153px;
 }
 
 .jetpacklogo {
   position: absolute;
   content: "";
   top: 140px;
-  right: -10px;
+  left: 229px;
 }
 
 .mailchimplogo {
   position: absolute;
   content: "";
   top: 25px;
-  right: -70px;
+  left: 289px;
 }
 
 .squarelogo {
@@ -694,7 +700,7 @@ nav {
   position: absolute;
   content: "";
   top: -130px;
-  right: -60px;
+  left: 270px;
 }
 
 .phototwoblockthree {
@@ -708,7 +714,7 @@ nav {
   position: absolute;
   content: "";
   top: 115px;
-  right: -170px;
+  left: 325px;
 }
 
 .third__page {
@@ -725,7 +731,7 @@ nav {
   width: 100%;
   height: 60px;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 1920px/30px;
   z-index: 1;
 }
 .third__page::after {
@@ -735,7 +741,7 @@ nav {
   width: 100%;
   height: 60px;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 1920em/30em;
   z-index: 1;
 }
 
@@ -756,37 +762,37 @@ nav {
 .third__page__circle__one {
   position: absolute;
   content: "";
-  width: 65px;
-  height: 65px;
   top: 127px;
   left: 217px;
+  width: 65px;
+  height: 65px;
 }
 
 .third__page__circle__two {
   position: absolute;
   content: "";
-  width: 401px;
-  height: 401px;
   top: 172px;
   left: 237px;
+  width: 401px;
+  height: 401px;
 }
 
 .third__page__circle__three {
   position: absolute;
   content: "";
-  width: 262px;
-  height: 262px;
   top: 536px;
   left: 1441px;
+  width: 262px;
+  height: 262px;
 }
 
 .third__page__circle__four {
   position: absolute;
   content: "";
-  width: 65px;
-  height: 65px;
   top: 514px;
   left: 1236px;
+  width: 65px;
+  height: 65px;
   z-index: 3;
 }
 
@@ -799,7 +805,7 @@ nav {
 .third__page__planing {
   position: absolute;
   content: "";
-  bottom: -40px;
+  top: 520px;
   left: 1070px;
   z-index: 2;
 }
@@ -813,18 +819,20 @@ nav {
 }
 
 .text__one {
-  left: 845px;
+  position: absolute;
+  content: "";
   top: 97px;
+  left: 845px;
 }
 
 .text__two {
-  left: 595px;
+  position: absolute;
+  content: "";
   top: 590px;
+  left: 595px;
 }
 
 .third__page__information {
-  position: absolute;
-  content: "";
   width: 485px;
   height: 400px;
 }
@@ -863,4 +871,256 @@ nav {
   color: #FFFFFF;
   border: none;
   outline: none;
+}
+
+.fourth__page {
+  margin-top: 100px;
+  width: 100%;
+  height: 1209px;
+  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+  position: relative;
+}
+
+.fourth__page__table__one {
+  position: absolute;
+  content: "";
+  top: 660px;
+  left: 450px;
+}
+
+.fourth__page__table__two {
+  position: absolute;
+  content: "";
+  top: 407px;
+  left: 1342px;
+}
+
+.fourth__page__photo11 {
+  position: absolute;
+  content: "";
+  top: 223px;
+  left: 391px;
+  width: 136px;
+  height: 136px;
+  background: url("../img/fourthpage/photo11.png") no-repeat center top;
+}
+
+.fourth__page__photo12 {
+  position: absolute;
+  content: "";
+  top: 438px;
+  left: 102px;
+}
+
+.fourth__page__photo13 {
+  position: absolute;
+  content: "";
+  top: 780px;
+  left: 256px;
+}
+
+.fourth__page__photo21 {
+  position: absolute;
+  content: "";
+  top: 209px;
+  left: 1378px;
+}
+
+.fourth__page__photo22 {
+  position: absolute;
+  content: "";
+  top: 466px;
+  left: 1533px;
+}
+
+.fourth__page__photo23 {
+  position: absolute;
+  content: "";
+  top: 844px;
+  left: 1435px;
+}
+
+.fourth__page__header__text {
+  text-align: center;
+  margin: 0 auto;
+  font-family: Circular Std Book;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  color: #272D4E;
+  padding-top: 138px;
+  width: 530px;
+}
+
+.fourth__page__information {
+  margin: 0 auto;
+  margin-top: 103px;
+  position: relative;
+  width: 730px;
+  height: 391px;
+  background: url("../img/fourthpage/twocommas.svg") no-repeat center top 28px, #fff;
+  box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+  border-radius: 20px;
+  z-index: 3;
+  position: relative;
+}
+.fourth__page__information::before {
+  position: absolute;
+  content: "";
+  top: 391px;
+  left: 26px;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(to bottom, #d7e4f9, #eaf2ff);
+  width: 678px;
+  height: 28px;
+  z-index: 2;
+}
+.fourth__page__information::after {
+  position: absolute;
+  content: "";
+  top: 419px;
+  left: 56px;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(to bottom, #d7e4f9, #eaf2ff);
+  width: 618px;
+  height: 20px;
+  z-index: 2;
+}
+
+.fourth__page__information__text {
+  font-family: Circular Std Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 39px;
+  text-align: center;
+  color: #94A2B3;
+  padding: 106px 82px 87px 82px;
+}
+
+.fourth__page__information__forward__arrow {
+  position: absolute;
+  content: "";
+  top: 500px;
+  left: 600px;
+  width: 31px;
+  height: 2px;
+  background: #7f7f7f;
+  transition: 0.4s;
+}
+.fourth__page__information__forward__arrow:before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 23px;
+  width: 10px;
+  height: 2px;
+  background: #7f7f7f;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+.fourth__page__information__forward__arrow:after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 23px;
+  width: 10px;
+  height: 2px;
+  background: #7f7f7f;
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.fourth__page__information__forward__arrow:hover {
+  position: absolute;
+  content: "";
+  top: 498px;
+  left: 581px;
+  width: 50px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
+}
+.fourth__page__information__forward__arrow:hover:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 38px;
+  width: 15px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
+}
+.fourth__page__information__forward__arrow:hover:after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 38px;
+  width: 15px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
+}
+
+.fourth__page__information__back__arrow {
+  position: absolute;
+  content: "";
+  top: 500px;
+  left: 500px;
+  width: 31px;
+  height: 2px;
+  background: #7f7f7f;
+  transition: 0.4s;
+}
+.fourth__page__information__back__arrow:before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  width: 10px;
+  height: 2px;
+  background: #7f7f7f;
+  transform: rotate(-45deg);
+  transition: 0.4s;
+}
+.fourth__page__information__back__arrow:after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: -3px;
+  width: 10px;
+  height: 2px;
+  background: #7f7f7f;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+.fourth__page__information__back__arrow:hover {
+  position: absolute;
+  content: "";
+  top: 498px;
+  left: 500px;
+  width: 50px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
+}
+.fourth__page__information__back__arrow:hover:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -3px;
+  width: 15px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
+}
+.fourth__page__information__back__arrow:hover:after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -3px;
+  width: 15px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
 }
