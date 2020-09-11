@@ -169,7 +169,7 @@
                             <td class="first__page__center__right__container__payment__strip">
                                 <img class="logopayment strip__logo" src="./img/firstpage/logostrip.svg" alt="logostrip">
                                 <p class="first__page__center__right__container__payment__text strip__text">Stripe gateway</p>
-                                <input class="toggle" id="strip" type="checkbox" value="value">
+                                <input class="toggle first__page__toggle" id="strip" type="checkbox" value="value">
                                     <label for="strip"></label>
                             </td>
                         </tr>
@@ -177,7 +177,7 @@
                             <td class="first__page__center__right__container__payment__paypal">
                                 <img class="logopayment paypal__logo" src="./img/firstpage/logopaypal.svg" alt="logopaypal">
                                 <p class="first__page__center__right__container__payment__text paypal__text">Paypal payments</p>
-                                <input class="toggle" id="paypal" type="checkbox" value="value">
+                                <input class="toggle first__page__toggle" id="paypal" type="checkbox" value="value">
                                     <label for="paypal"></label>
                             </td>
                         </tr>
@@ -185,7 +185,7 @@
                             <td class="first__page__center__right__container__payment__bank">
                                 <img class="logopayment bank__logo" src="./img/firstpage/logoBank.svg" alt="logoBank">
                                 <p class="first__page__center__right__container__payment__text bank__text">Bank Transfers</p>
-                                <input class="toggle" id="bank" type="checkbox" value="value">
+                                <input class="toggle first__page__toggle" id="bank" type="checkbox" value="value">
                                     <label for="bank"></label>
                             </td>
                         </tr>
@@ -203,32 +203,60 @@
             <div class="second__page__blockone__changing">
                 <p class="second__page__blockone__changing__title">Payment</p>
                 <p class="second__page__blockone__changing__subtitle">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
-                <div class="second__page__blockone__changing__stripe">
-                    <div class="second__page__blockone__changing__stripe__blockOne">
-                        <img class="second__page__blockone__changing__stripe__img" src="./img/firstpage/logostrip.svg" alt="logostrip">
+                <div class="second__page__blockone__changing__block">
+                    <div class="second__page__blockone__changing__blockOne">
+                        <img class="second__page__blockone__changing__img" src="./img/firstpage/logostrip.svg" alt="logostrip">
                     </div>
-                    <div class="second__page__blockone__changing__stripe__blockTwo">
-                        <p class="second__page__blockone__changing__stripe__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
-                        <input class="second__page__blockone__changing__stripe__checkbox" type="checkbox" name="option" value="">Set up что то там еще<Br> 
-                        <input class="second__page__blockone__changing__stripe__textbox" type="text" name="text" value="" placeholder="Пароль">
+                    <div class="second__page__blockone__changing__blockTwo">
+                        <p class="second__page__blockone__changing__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
+                        <input class="second__page__blockone__changing__checkbox" type="checkbox" name="option" value=""><span class="second__page__blockone__changing__checkbox__span">Set up что то там еще</span><Br> 
+                        <input class="second__page__blockone__changing__textbox" type="text" name="text" value="" placeholder="Пароль">
                     </div>
-                    <div class="second__page__blockone__changing__stripe__blockThree">
-                        <input class="toggle" id="strip_page_two" type="checkbox" value="value">
+                    <div class="second__page__blockone__changing__blockThree">
+                        <input class="toggle second__page__toggle" id="strip_page_two" type="checkbox" value="value">
                         <label for="strip_page_two"></label>
                     </div>    
                 </div>
-                <div class="second__page__blockone__changing__paypal">
-                    <div class="second__page__blockone__changing__stripe__blockOne">
-                        <img class="second__page__blockone__changing__stripe__img" src="./img/firstpage/logopaypal.svg" alt="logostrip">
+                <div class="second__page__blockone__changing__block">
+                    <div class="second__page__blockone__changing__blockOne">
+                        <img class="second__page__blockone__changing__img" src="./img/firstpage/logopaypal.svg" alt="logostrip">
                     </div>
-                    <div class="second__page__blockone__changing__stripe__blockTwo">
-                        <p class="second__page__blockone__changing__stripe__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
-                        <input class="second__page__blockone__changing__stripe__checkbox" type="checkbox" name="option" value="">Set up что то там еще<Br> 
-                        <input class="second__page__blockone__changing__stripe__textbox" type="text" name="text" value="" placeholder="Пароль">
+                    <div class="second__page__blockone__changing__blockTwo">
+                        <p class="second__page__blockone__changing__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
+                        <input class="second__page__blockone__changing__checkbox" type="checkbox" name="option" value=""><span class="second__page__blockone__changing__checkbox__span">Set up что то там еще</span><Br> 
+                        <input class="second__page__blockone__changing__textbox" type="text" name="text" value="" placeholder="Пароль">
                     </div>
-                    <div class="second__page__blockone__changing__stripe__blockThree">
-                        <input class="toggle" id="strip_page_two__paypal" type="checkbox" value="value">
+                    <div class="second__page__blockone__changing__blockThree">
+                        <input class="toggle second__page__toggle" id="strip_page_two__paypal" type="checkbox" value="value">
                         <label for="strip_page_two__paypal"></label>
+                    </div>    
+                </div>
+                <div class="second__page__blockone__changing__block">
+                    <div class="second__page__blockone__changing__blockOne">
+                        <img class="second__page__blockone__changing__img" src="./img/firstpage/logoBank.svg" alt="Bank">
+                    </div>
+                    <div class="second__page__blockone__changing__blockTwo">
+                        <p class="second__page__blockone__changing__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
+                        <input class="second__page__blockone__changing__checkbox" type="checkbox" name="option" value=""><span class="second__page__blockone__changing__checkbox__span">Set up что то там еще</span><Br> 
+                        <input class="second__page__blockone__changing__textbox" type="text" name="text" value="" placeholder="Пароль">
+                    </div>
+                    <div class="second__page__blockone__changing__blockThree">
+                        <input class="toggle second__page__toggle" id="strip_page_three" type="checkbox" value="value">
+                        <label for="strip_page_three"></label>
+                    </div>    
+                </div>
+                <div class="second__page__blockone__changing__block">
+                    <div class="second__page__blockone__changing__blockOne">
+                        <img class="second__page__blockone__changing__img" src="./img/fifthpage/twitterlogo.svg" alt="twitter">
+                    </div>
+                    <div class="second__page__blockone__changing__blockTwo">
+                        <p class="second__page__blockone__changing__text">WooCommers can accept both online and offline payments. <a href="">Addishional payment methods</a> can be installed later.</p>
+                        <input class="second__page__blockone__changing__checkbox" type="checkbox" name="option" value=""><span class="second__page__blockone__changing__checkbox__span">Set up что то там еще</span><Br> 
+                        <input class="second__page__blockone__changing__textbox" type="text" name="text" value="" placeholder="Пароль">
+                    </div>
+                    <div class="second__page__blockone__changing__blockThree">
+                        <input class="toggle second__page__toggle" id="strip_page_foure" type="checkbox" value="value">
+                        <label for="strip_page_foure"></label>
                     </div>    
                 </div>
             </div>
