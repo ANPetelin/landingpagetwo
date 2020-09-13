@@ -5,14 +5,30 @@
 
 body {
   width: 1920px;
+  overflow-x: hidden;
+}
+@media (max-width: 350px) {
+  body {
+    width: 100%;
+  }
 }
 
 .first__page {
   background: url("../img/firstpage/W.svg") no-repeat top right, linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
 }
+@media (max-width: 350px) {
+  .first__page {
+    background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+  }
+}
 
 .first__page__header {
   padding: 45px 55px 0 55px;
+}
+@media (max-width: 350px) {
+  .first__page__header {
+    padding: 15px 5px 0 5px;
+  }
 }
 
 .first__page__header:after {
@@ -24,10 +40,24 @@ body {
 .first__page__header__logo {
   float: left;
 }
+@media (max-width: 350px) {
+  .first__page__header__logo {
+    float: none;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
 
 nav {
   float: left;
   padding-left: 144px;
+}
+@media (max-width: 350px) {
+  nav {
+    float: none;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .menu {
@@ -37,37 +67,82 @@ nav {
   float: left;
   display: block;
 }
+@media (max-width: 350px) {
+  .menu li {
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
 .menu a, .first__page__header__navigation a {
   color: #272D4E;
-  text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
   padding-right: 38px;
+}
+@media (max-width: 350px) {
+  .menu a, .first__page__header__navigation a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .menu a, .first__page__header__navigation a {
+    padding: 0;
+  }
 }
 
 .first__page__header__navigation {
   float: right;
 }
+@media (max-width: 350px) {
+  .first__page__header__navigation {
+    float: none;
+    padding: 10px;
+  }
+  .first__page__header__navigation img {
+    float: right;
+    padding-top: 15px;
+  }
+}
 
 .first__page__header__navigation__button {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   width: 120px;
   height: 47px;
   background-color: #7854F7;
   color: #fff;
   border-radius: 4px;
   margin-right: 38px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
   border: none;
+}
+@media (max-width: 350px) {
+  .first__page__header__navigation__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .first__page__header__navigation__button {
+    margin-left: 15%;
+  }
 }
 
 .first__page__center {
   padding-left: 220px;
+}
+@media (max-width: 350px) {
+  .first__page__center {
+    padding: 0;
+  }
 }
 
 .first__page__center:after {
@@ -81,6 +156,13 @@ nav {
   float: left;
   padding-top: 200px;
 }
+@media (max-width: 350px) {
+  .first__page__center__left__container {
+    width: 100%;
+    float: none;
+    padding-top: 10px;
+  }
+}
 
 .first__page__center__left__container__title {
   font-family: Circular Std Book;
@@ -89,20 +171,53 @@ nav {
   line-height: 95px;
   color: #272D4E;
 }
+@media (max-width: 350px) {
+  .first__page__center__left__container__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 
 .subtitle {
+  color: #272D4E;
   font-family: Roboto;
+  font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
   line-height: 25px;
   padding-top: 30px;
   color: #94A2B3;
+}
+@media (max-width: 350px) {
+  .subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .subtitle {
+    padding-top: 10px;
+    text-align: center;
+  }
 }
 
 .first__page__center__left__container__flex__from__button {
   display: inline-flex;
 }
+@media (max-width: 350px) {
+  .first__page__center__left__container__flex__from__button {
+    display: block;
+    text-align: center;
+  }
+}
 
 .first__page__center__left__container__button {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: 30px;
   width: 267px;
   height: 72px;
@@ -110,20 +225,44 @@ nav {
   border-radius: 60px;
   border: none;
   color: #fff;
+  outline: none;
+}
+@media (max-width: 350px) {
+  .first__page__center__left__container__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .first__page__center__left__container__button {
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+
+.href {
+  color: #272D4E;
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  outline: none;
-}
-
-.href {
   padding-top: 55px;
   padding-left: 12px;
-  font-family: Roboto;
-  font-size: 18px;
   line-height: 25px;
   color: #94A2B3;
+}
+@media (max-width: 350px) {
+  .href {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .href {
+    padding-top: 20px;
+    padding-left: 0;
+  }
 }
 .href a {
   color: #29AAF3;
@@ -134,26 +273,49 @@ nav {
 .first__page__center__right__container {
   position: relative;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container {
+    text-align: center;
+  }
+}
 
 .first__page__center__table__one {
   position: absolute;
   content: "";
-  left: 1280px;
   top: 120px;
+  left: 1280px;
+}
+@media (max-width: 350px) {
+  .first__page__center__table__one {
+    display: none;
+  }
 }
 
 .first__page__center__table__two {
   position: absolute;
   content: "";
-  left: 850px;
   top: 270px;
+  left: 850px;
+}
+@media (max-width: 350px) {
+  .first__page__center__table__two {
+    display: none;
+  }
 }
 
 .first__page__center__table__three {
   position: absolute;
   content: "";
-  left: 1430px;
   top: 700px;
+  left: 1430px;
+}
+@media (max-width: 350px) {
+  .first__page__center__table__three {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 50px;
+  }
 }
 
 .circle {
@@ -181,23 +343,39 @@ nav {
 
 .firstPageSneakers {
   position: absolute;
+  content: "";
   top: 270px;
   left: 970px;
+}
+@media (max-width: 350px) {
+  .firstPageSneakers {
+    display: none;
+  }
 }
 
 .firstPageTwoGirls {
   position: absolute;
+  content: "";
   top: 180px;
   left: 880px;
   border-radius: 20px;
 }
+@media (max-width: 350px) {
+  .firstPageTwoGirls {
+    position: absolute;
+    content: "";
+    top: 140px;
+    left: 20px;
+  }
+}
 
 .first__page__center__right__container__button__sale {
   position: absolute;
+  content: "";
+  top: 244px;
+  left: 1250px;
   width: 147px;
   height: 54px;
-  left: 1250px;
-  top: 244px;
   background: #70C217;
   border-radius: 27px;
   border: none;
@@ -210,40 +388,74 @@ nav {
   letter-spacing: 0.4em;
   color: #FFFFFF;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__button__sale {
+    position: static;
+    width: 267px;
+    margin-top: 45px;
+  }
+}
 
 .first__page__center__right__container__button__basket {
   position: absolute;
+  content: "";
+  top: 600px;
+  left: 935px;
   width: 76px;
   height: 76px;
-  left: 935px;
-  top: 600px;
   background-color: #FFBA49;
   border-radius: 50%;
   border: none;
   outline: none;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__button__basket {
+    position: absolute;
+    content: "";
+    top: 790px;
+    left: 30px;
+  }
+}
 
 .first__page__center__right__container__button__logoshield {
   position: absolute;
+  content: "";
+  top: 670px;
+  left: 1485px;
   width: 98px;
   height: 68px;
-  left: 1485px;
-  top: 670px;
   background-color: #EF4358;
   border-radius: 31px;
   border: none;
   outline: none;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__button__logoshield {
+    position: absolute;
+    content: "";
+    top: 795px;
+    left: 190px;
+  }
+}
 
 .first__page__center__right__container__order {
   position: absolute;
+  content: "";
+  top: 270px;
+  left: 1420px;
   width: 300px;
   height: 422px;
-  left: 1420px;
-  top: 270px;
   background: #FFFFFF;
   border: 1px solid #E5EFFF;
   box-sizing: border-box;
+}
+@media (max-width: 350px) {
+  .first__page__center__right__container__order {
+    position: absolute;
+    content: "";
+    top: 380px;
+    left: 10px;
+  }
 }
 
 .first__page__center__right__container__order__shoes {
@@ -284,37 +496,59 @@ nav {
 }
 
 .change__size {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-right: 12px;
   width: 29px;
   height: 29px;
   background: #F6F6F6;
   border-radius: 5px;
-  font-family: Roboto;
   font-size: 9px;
   line-height: 11px;
   color: #868686;
   border: none;
   outline: none;
 }
+@media (max-width: 350px) {
+  .change__size {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .first__page__center__right__container__order__price {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: 25px;
   margin-left: 40px;
   float: left;
-  font-family: Roboto;
-  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 1px;
   color: #7854F7;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__order__price {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .first__page__center__right__container__order__oldprice {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: 60px;
   margin-left: -33px;
   float: left;
-  font-family: Roboto;
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -322,8 +556,19 @@ nav {
           text-decoration-line: line-through;
   color: #868686;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__order__oldprice {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .first__page__center__right__container__order__count {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: 25px;
   margin-right: 36px;
   padding-top: 12px;
@@ -333,10 +578,15 @@ nav {
   height: 29px;
   background: #F6F6F6;
   border-radius: 5px;
-  font-family: Roboto;
   font-size: 12px;
   line-height: 14px;
   color: #222222;
+}
+@media (max-width: 350px) {
+  .first__page__center__right__container__order__count {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .first__page__center__right__container__order__count__minus {
@@ -360,12 +610,12 @@ nav {
 .first__page__center__right__container__order__count__plus::after {
   position: absolute;
   content: "";
-  margin-left: -4px;
-  margin-top: 0px;
-  width: 7px;
-  height: 2px;
-  background-color: #222222;
-  border-radius: 1px;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: inherit;
   transform: rotate(90deg);
 }
 
@@ -383,41 +633,53 @@ nav {
   border: none;
   outline: none;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__order__addtocard {
+    margin-left: 5px;
+  }
+}
 
 .first__page__center__right__container__payment {
-  padding-left: 19px;
   position: absolute;
+  content: "";
+  top: 600px;
+  left: 1057px;
+  padding-left: 19px;
   width: 387px;
   height: 248px;
-  left: 1057px;
-  top: 600px;
   background: #FFFFFF;
   border-radius: 23px;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__payment {
+    position: absolute;
+    content: "";
+    top: 780px;
+    left: 0px;
+  }
+}
 
-.first__page__center__right__container__payment__strip {
+.first__page__center__right__container__payment__sistem {
   width: 368px;
   border-bottom: 1px solid #E5EFFF;
   position: relative;
   padding-bottom: 25px;
 }
 
-.first__page__center__right__container__payment__paypal {
-  width: 368px;
-  border-bottom: 1px solid #E5EFFF;
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.first__page__center__right__container__payment__bank {
-  width: 368px;
-  position: relative;
+.sistem__bank {
+  border-bottom: 0px solid #E5EFFF;
+  padding-bottom: 0;
 }
 
 .logopayment {
   margin-left: 27px;
   margin-top: 23px;
   float: left;
+}
+@media (max-width: 350px) {
+  .logopayment {
+    margin-left: 0;
+  }
 }
 
 .paypal__logo {
@@ -426,6 +688,11 @@ nav {
 
 .bank__logo {
   margin-left: 60px;
+}
+@media (max-width: 350px) {
+  .bank__logo {
+    margin-left: 30px;
+  }
 }
 
 .first__page__center__right__container__payment__text {
@@ -437,13 +704,28 @@ nav {
   line-height: 25px;
   color: #94A2B3;
 }
+@media (max-width: 350px) {
+  .first__page__center__right__container__payment__text {
+    margin-left: 30px;
+  }
+}
 
 .paypal__text {
   margin-left: 33px;
 }
+@media (max-width: 350px) {
+  .paypal__text {
+    margin-left: 10px;
+  }
+}
 
 .bank__text {
   margin-left: 65px;
+}
+@media (max-width: 350px) {
+  .bank__text {
+    margin-left: 55px;
+  }
 }
 
 .toggle {
@@ -477,6 +759,14 @@ nav {
   height: 24px;
   border-radius: 12px;
 }
+@media (max-width: 350px) {
+  .first__page__toggle + label:before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 234px;
+  }
+}
 .first__page__toggle + label:after {
   position: absolute;
   content: "";
@@ -486,8 +776,21 @@ nav {
   height: 16px;
   border-radius: 50%;
 }
+@media (max-width: 350px) {
+  .first__page__toggle + label:after {
+    position: absolute;
+    content: "";
+    top: 34px;
+    left: 238px;
+  }
+}
 .first__page__toggle:checked + label:after {
   left: 327px;
+}
+@media (max-width: 350px) {
+  .first__page__toggle:checked + label:after {
+    left: 260px;
+  }
 }
 
 .second__page__header__text {
@@ -502,6 +805,18 @@ nav {
   padding-top: 255px;
   padding-bottom: 56px;
 }
+@media (max-width: 350px) {
+  .second__page__header__text {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 350px) {
+  .second__page__header__text {
+    width: 100%;
+    padding-top: 1000px;
+  }
+}
 
 .second__page__blockone {
   width: 430px;
@@ -509,6 +824,12 @@ nav {
   float: left;
   margin-left: 220px;
   position: relative;
+}
+@media (max-width: 350px) {
+  .second__page__blockone {
+    width: 100%;
+    margin-left: 5px;
+  }
 }
 
 .second__page__blockone__applePay {
@@ -525,11 +846,21 @@ nav {
 }
 
 .second__page__block__title {
+  text-align: center;
+  margin: 0 auto;
   font-family: Circular Std Book;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 55px;
   line-height: 70px;
   color: #272D4E;
+  font-size: 36px;
+  text-align: left;
+}
+@media (max-width: 350px) {
+  .second__page__block__title {
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
 
 .second__page__block__title__subtitle {
@@ -543,6 +874,7 @@ nav {
 
 .second__page__blockone__changing {
   position: absolute;
+  content: "";
   top: 100px;
   left: -52px;
   width: 202px;
@@ -729,20 +1061,22 @@ nav {
   position: absolute;
   content: "";
   top: -30px;
+  left: 0;
   width: 100%;
   height: 60px;
   background-color: #fff;
-  border-radius: 1920px/30px;
+  border-radius: 1920px/60px;
   z-index: 1;
 }
 .third__page::after {
   position: absolute;
   content: "";
-  bottom: -30px;
+  top: 1080px;
+  left: 0;
   width: 100%;
   height: 60px;
   background-color: #fff;
-  border-radius: 1920px/30px;
+  border-radius: 1920px/60px;
   z-index: 1;
 }
 
@@ -848,26 +1182,43 @@ nav {
 }
 
 .third__page__subtitle {
-  padding-top: 13px;
+  color: #272D4E;
   font-family: Roboto;
+  font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
+  padding-top: 13px;
+  font-weight: normal;
   line-height: 30px;
   color: #FFFFFF;
 }
+@media (max-width: 350px) {
+  .third__page__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .third__page__button {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: 40px;
   width: 256px;
   height: 64px;
   background: #70C217;
   border-radius: 32px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
   color: #FFFFFF;
   border: none;
   outline: none;
+}
+@media (max-width: 350px) {
+  .third__page__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .fourth__page {
@@ -897,9 +1248,6 @@ nav {
   content: "";
   top: 223px;
   left: 391px;
-  width: 136px;
-  height: 136px;
-  background: url("../img/fourthpage/photo11.png") no-repeat center top;
 }
 
 .fourth__page__photo12 {
@@ -948,6 +1296,12 @@ nav {
   padding-top: 138px;
   width: 530px;
 }
+@media (max-width: 350px) {
+  .fourth__page__header__text {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
 
 .fourth__page__information {
   margin: 0 auto;
@@ -986,8 +1340,6 @@ nav {
 
 .fourth__page__information__text {
   font-family: Circular Std Book;
-  font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 39px;
   text-align: center;
@@ -1153,18 +1505,32 @@ nav {
   margin-top: -35px;
   width: 650px;
 }
+@media (max-width: 350px) {
+  .fifth__page__header__title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
 
 .fifth__page__header__subtitle {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin: 0 auto;
   padding-top: 31px;
   width: 660px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: #94A2B3;
+}
+@media (max-width: 350px) {
+  .fifth__page__header__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .fifth__page__circle__one {
@@ -1219,6 +1585,11 @@ nav {
 }
 
 .fifth__page__block__getStarted__button {
+  color: #272D4E;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   margin-top: -90px;
   float: right;
   margin-right: 200px;
@@ -1227,14 +1598,17 @@ nav {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 36px;
-  font-family: Roboto;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #fff;
   outline: none;
   background-color: transparent;
+}
+@media (max-width: 350px) {
+  .fifth__page__block__getStarted__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .fifth__page__block__aboutus {

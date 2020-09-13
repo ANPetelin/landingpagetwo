@@ -1,3 +1,5 @@
+@import "media_mixin.scss";
+
 $mainTextColor: #272D4E;
 $colorViolet: #7854F7;
 $colorBlue: #29AAF3;
@@ -22,6 +24,22 @@ $ffCircular: Circular Std Book;
     font-size: 55px;
     line-height: 70px;
     color: $mainTextColor;
+    @include _350 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+@mixin subtitle {   
+    color: $mainTextColor;
+    font-family: $ffRoboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    @include _350 {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 * {
@@ -31,15 +49,25 @@ $ffCircular: Circular Std Book;
 
 body {
     width: 1920px;
-    //overflow-x: hidden;
+    overflow-x: hidden;
+    @include _350 {
+        width: 100%;
+        //border: 1px solid red;
+    }
 }
 
 .first__page {
     background: url("../img/firstpage/W.svg") no-repeat top right, linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+    @include _350 {
+        background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+    }
 }
 
 .first__page__header {
     padding: 45px 55px 0 55px;
+    @include _350 {
+        padding: 15px 5px 0 5px;
+    }
 }
 
 .first__page__header:after {
@@ -50,11 +78,21 @@ body {
 
 .first__page__header__logo {
     float: left;
+    @include _350 {
+        float: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 }
 
 nav {
     float: left;
     padding-left: 144px;
+    @include _350 {
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+    }
 }
 
 .menu {
@@ -62,39 +100,55 @@ nav {
     li {
         float: left;
         display: block;
+        @include _350 {
+            float: none;
+            text-align: center;
+            margin-bottom: 10px;
+        }
     }
 }
 
 .menu a, .first__page__header__navigation a {
-    color: $mainTextColor;
+    @include subtitle();
     text-decoration: none;
-    font-family: $ffRoboto;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     padding-right: 38px;
+    @include _350 {
+        padding: 0;
+    }
 }
 
 .first__page__header__navigation {
     float: right;
+    @include _350 {
+        float: none;
+        padding: 10px;
+        img {
+            float: right;
+            padding-top: 15px;
+        }
+
+    }
 }
 
 .first__page__header__navigation__button {
+    @include subtitle();
     width: 120px;
     height: 47px;
     background-color: $colorViolet;
     color: #fff;
     border-radius: 4px;
     margin-right: 38px;
-    font-family: $ffRoboto;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     border: none;
+    @include _350 {
+        margin-left: 15%;
+    }
 }
 
 .first__page__center {
     padding-left: 220px;
+    @include _350 {
+        padding: 0;
+    }
 }
 
 .first__page__center:after {
@@ -107,6 +161,11 @@ nav {
     width: 50%;
     float: left;
     padding-top: 200px;
+    @include _350 {        
+        width: 100%;
+        float: none;
+        padding-top: 10px;
+    }
 }
 
 .first__page__center__left__container__title {
@@ -115,21 +174,34 @@ nav {
     font-size: 85px;
     line-height: 95px;
     color: $mainTextColor;
+    @include _350 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
 
 .subtitle {
-    font-family: $ffRoboto;
-    font-size: 18px;
+    @include subtitle();
     line-height: 25px;
     padding-top: 30px;
     color: #94A2B3;
+    @include _350 {
+        padding-top: 10px;
+        text-align: center;
+    }
 }
 
 .first__page__center__left__container__flex__from__button {
     display: inline-flex;
+    @include _350 {
+        display: block;
+        text-align: center;
+    }
 }
 
 .first__page__center__left__container__button {
+    @include subtitle();
     margin-top: 30px;
     width: 267px;
     height: 72px;
@@ -137,20 +209,24 @@ nav {
     border-radius: 60px;
     border: none;
     color:#fff;
-    font-family: $ffRoboto;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     outline: none;
+    @include _350 {
+        margin-top: 20px;
+        height: 50px;
+        border-radius: 25px;
+    }
 }
 
 .href {
+    @include subtitle();
     padding-top: 55px;
     padding-left: 12px;
-    font-family: $ffRoboto;
-    font-size: 18px;
     line-height: 25px;
     color: #94A2B3;
+    @include _350 {
+        padding-top: 20px;
+        padding-left: 0;
+    }
     a {
         color:  #29AAF3;
         text-decoration: none;
@@ -161,27 +237,30 @@ nav {
 
 .first__page__center__right__container {
     position: relative;
+    @include _350 {
+        text-align: center;
+    }
 }
 
 .first__page__center__table__one {
-    position: absolute;
-    content: '';
-    left: 1280px;
-    top: 120px;
+    @include absolute(120px, 1280px);
+    @include _350 {
+        display: none
+    }
 }
 
 .first__page__center__table__two {
-    position: absolute;
-    content: '';
-    left: 850px;
-    top: 270px;
+    @include absolute(270px, 850px);
+    @include _350 {
+        display: none
+    }
 }
 
 .first__page__center__table__three {
-    position: absolute;
-    content: '';
-    left: 1430px;
-    top: 700px;
+    @include absolute(700px, 1430px);
+    @include _350 {
+        @include absolute(100px, 50px);
+    }
 }
 
 .circle {
@@ -208,24 +287,24 @@ nav {
 }
 
 .firstPageSneakers {
-    position: absolute;
-    top: 270px;
-    left: 970px;
+    @include absolute(270px, 970px);
+    @include _350 {
+        display: none
+    }
 }
 
 .firstPageTwoGirls {
-    position: absolute;
-    top: 180px;
-    left: 880px;
+    @include absolute(180px, 880px);
     border-radius: 20px;
+    @include _350 {
+        @include absolute(140px, 20px);
+    }
 }
 
 .first__page__center__right__container__button__sale {
-    position: absolute;
+    @include absolute(244px, 1250px);
     width: 147px;
     height: 54px;
-    left: 1250px;
-    top: 244px;
     background: $colorGreen;
     border-radius: 27px;
     border: none;
@@ -237,41 +316,49 @@ nav {
     line-height: 32px;
     letter-spacing: 0.4em;
     color: #FFFFFF;
+    @include _350 {
+        position: static;
+        width: 267px;
+        margin-top: 45px;
+    }
 }
 
 .first__page__center__right__container__button__basket {
-    position: absolute;
+    @include absolute(600px, 935px);
     width: 76px;
     height: 76px;
-    left: 935px;
-    top: 600px;
     background-color: #FFBA49;
     border-radius: 50%;
     border: none;
     outline: none;
+    @include _350 {
+        @include absolute(790px, 30px);
+    }
 }
 
 .first__page__center__right__container__button__logoshield {
-    position: absolute;
+    @include absolute(670px, 1485px);
     width: 98px;
     height: 68px;
-    left: 1485px;
-    top: 670px;
     background-color: #EF4358;;
     border-radius: 31px;
     border: none;
     outline: none;
+    @include _350 {
+        @include absolute(795px, 190px);
+    }
 }
 
 .first__page__center__right__container__order {
-    position: absolute;
+    @include absolute(270px, 1420px);
     width: 300px;
     height: 422px;
-    left: 1420px;
-    top: 270px;
     background: #FFFFFF;
     border: 1px solid #E5EFFF;
     box-sizing: border-box;
+    @include _350 {
+        @include absolute(380px, 10px);
+    }
 }
 
 .first__page__center__right__container__order__shoes {
@@ -312,12 +399,12 @@ nav {
 }
 
 .change__size {
+    @include subtitle();
     margin-right: 12px;
     width: 29px;
     height: 29px;
     background: #F6F6F6;
     border-radius: 5px;
-    font-family: $ffRoboto;
     font-size: 9px;
     line-height: 11px;
     color: $colorGray;
@@ -326,11 +413,10 @@ nav {
 }
 
 .first__page__center__right__container__order__price {    
+    @include subtitle();
     margin-top: 25px;
     margin-left: 40px;
     float: left;
-    font-family: $ffRoboto;
-    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 1px;
@@ -338,11 +424,10 @@ nav {
 }
 
 .first__page__center__right__container__order__oldprice {
+    @include subtitle();
     margin-top: 60px;
     margin-left: -33px;
     float: left;
-    font-family: $ffRoboto;
-    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 1px;
@@ -351,6 +436,7 @@ nav {
 }
 
 .first__page__center__right__container__order__count {
+    @include subtitle();
     margin-top: 25px; 
     margin-right: 36px; 
     padding-top: 12px; 
@@ -360,7 +446,6 @@ nav {
     height: 29px;
     background: #F6F6F6;
     border-radius: 5px;
-    font-family: $ffRoboto;
     font-size: 12px;
     line-height: 14px;
     color: #222222;
@@ -384,14 +469,11 @@ nav {
     border-radius: 1px;
     position: relative;
     &::after {
-        position: absolute;
-        content: '';
-        margin-left: -4px;
-        margin-top: 0px;
-        width: 7px;
-        height: 2px;
-        background-color: #222222;
-        border-radius: 1px;
+        @include absolute(0, 0);
+        width: inherit;
+        height: inherit;
+        background-color: inherit;
+        border-radius: inherit;
         transform: rotate(90deg);
     }
 }
@@ -409,42 +491,42 @@ nav {
     color: #FFFFFF;    
     border: none;
     outline: none;
+    @include _350 {
+        margin-left: 5px;
+    }
 }
 
 .first__page__center__right__container__payment {
+    @include absolute(600px, 1057px);
     padding-left: 19px;
-    position: absolute;
     width: 387px;
     height: 248px;
-    left: 1057px;
-    top: 600px;
     background: #FFFFFF;
     border-radius: 23px;
+    @include _350 {
+        @include absolute(780px, 0px);
+    }
 }
 
-.first__page__center__right__container__payment__strip {
+.first__page__center__right__container__payment__sistem {
     width: 368px;
     border-bottom: 1px solid #E5EFFF;    
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 25px;    
 }
 
-.first__page__center__right__container__payment__paypal {
-    width: 368px;
-    border-bottom: 1px solid #E5EFFF;    
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.first__page__center__right__container__payment__bank {
-    width: 368px; 
-    position: relative;
+.sistem__bank {        
+    border-bottom: 0px solid #E5EFFF;  
+    padding-bottom: 0;
 }
 
 .logopayment {
     margin-left: 27px;
     margin-top: 23px;
     float: left;
+    @include _350 {
+        margin-left: 0;
+    }
 }
 
 .paypal__logo {
@@ -453,6 +535,9 @@ nav {
 
 .bank__logo {
     margin-left: 60px;
+    @include _350 {
+        margin-left: 30px;
+    }
 }
 
 .first__page__center__right__container__payment__text {
@@ -463,14 +548,23 @@ nav {
     font-size: 12px;
     line-height: 25px;
     color: #94A2B3;
+    @include _350 {
+        margin-left: 30px;
+    }
 }
 
 .paypal__text {
     margin-left: 33px;
+    @include _350 {
+        margin-left: 10px;
+    }
 }
 
 .bank__text {
     margin-left: 65px;
+    @include _350 {
+        margin-left: 55px;
+    }
 }
 
 .toggle {
@@ -503,18 +597,27 @@ nav {
         @include absolute(30px, 300px);
         width: 47px;
         height: 24px;
-        border-radius: 12px;         
+        border-radius: 12px;
+        @include _350 {
+            @include absolute(30px, 234px);
+        }         
     }
 
-    & + label:after {    
+    & + label:after {
         @include absolute(34px, 304px);
         width: 16px;
         height: 16px;
         border-radius: 50%;
+        @include _350 {
+            @include absolute(34px, 238px);
+        }
     }
   
     &:checked + label:after {
         left: 327px;
+        @include _350 {
+            left: 260px;
+        }
     }
 }
 
@@ -525,6 +628,10 @@ nav {
     width: 457px;
     padding-top: 255px;
     padding-bottom: 56px;
+    @include _350 {
+        width: 100%;
+        padding-top: 1000px;
+    }
 }
 
 .second__page__blockone {
@@ -533,9 +640,13 @@ nav {
     float: left;
     margin-left: 220px;
     position: relative;
+    @include _350 {
+        width: 100%;
+        margin-left: 5px;
+    }
 }
 
-.second__page__blockone__applePay {    
+.second__page__blockone__applePay {
     @include absolute(40px, -30px);
 }
 
@@ -546,11 +657,9 @@ nav {
 }
 
 .second__page__block__title {
-    font-family: $ffCircular;
-    font-weight: bold;
+    @include header__text();  
     font-size: 36px;
-    line-height: 70px;
-    color: $mainTextColor;
+    text-align: left;
 }
 .second__page__block__title__subtitle {
     margin-top: -20px;
@@ -562,9 +671,7 @@ nav {
 }
 
 .second__page__blockone__changing {
-    position: absolute;
-    top: 100px;
-    left: -52px;
+    @include absolute(100px, -52px);
     width: 202px;
     height: 264px;
     background-color: #fff;
@@ -718,23 +825,19 @@ nav {
     background: url("../img/thirdpage/woo.svg") no-repeat top right, $colorViolet;
     position: relative;
     &::before {
-        position: absolute;
-        content: '';
-        top: -30px;
+        @include absolute(-30px, 0);
         width: 100%;
         height: 60px;
         background-color: #fff;
-        border-radius: 1920px/30px;
+        border-radius: 1920px/60px;
         z-index: 1;
     }
     &::after {
-        position: absolute;
-        content: '';
-        bottom: -30px;
+        @include absolute(1080px, 0);
         width: 100%;
         height: 60px;
         background-color: #fff;
-        border-radius: 1920px/30px;
+        border-radius: 1920px/60px;
         z-index: 1;
     }
 }
@@ -811,23 +914,20 @@ nav {
 }
 
 .third__page__subtitle {
+    @include subtitle();
     padding-top: 13px;
-    font-family: $ffRoboto;
-    font-size: 18px;
+    font-weight: normal;
     line-height: 30px;
     color: #FFFFFF;
 }
 
 .third__page__button {
+    @include subtitle();
     margin-top: 40px;
     width: 256px;
     height: 64px;
     background: $colorGreen;
     border-radius: 32px;
-    font-family: $ffRoboto;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     color: #FFFFFF;
     border: none;
     outline: none;
@@ -853,9 +953,6 @@ nav {
 
 .fourth__page__photo11 {
     @include absolute(223px, 391px);
-    width: 136px;
-    height: 136px;
-    background: url("../img/fourthpage/photo11.png") no-repeat center top;
 }
 
 .fourth__page__photo12 {
@@ -915,8 +1012,6 @@ nav {
 
 .fourth__page__information__text {    
     font-family: $ffCircular;
-    font-style: normal;
-    font-weight: normal;
     font-size: 27px;
     line-height: 39px;
     text-align: center;
@@ -1045,13 +1140,11 @@ nav {
 }
 
 .fifth__page__header__subtitle {
+    @include subtitle();
     margin: 0 auto;
     padding-top: 31px;
     width: 660px;
-    font-family: $ffRoboto;
-    font-style: normal;
     font-weight: normal;
-    font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: #94A2B3;
@@ -1097,6 +1190,7 @@ nav {
 }
 
 .fifth__page__block__getStarted__button {
+    @include subtitle();
     margin-top: -90px;
     float: right;
     margin-right: 200px;
@@ -1105,10 +1199,7 @@ nav {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 36px;
-    font-family: $ffRoboto;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #fff;
     outline: none;
