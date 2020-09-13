@@ -52,7 +52,6 @@ body {
     overflow-x: hidden;
     @include _350 {
         width: 100%;
-        //border: 1px solid red;
     }
 }
 
@@ -139,8 +138,12 @@ nav {
     border-radius: 4px;
     margin-right: 38px;
     border: none;
+    outline: none;
     @include _350 {
         margin-left: 15%;
+    }    
+    &:hover {
+        border: 2px solid $colorGray;
     }
 }
 
@@ -214,6 +217,9 @@ nav {
         margin-top: 20px;
         height: 50px;
         border-radius: 25px;
+    }
+    &:hover {
+        border: 2px solid $colorGray;
     }
 }
 
@@ -321,6 +327,9 @@ nav {
         width: 267px;
         margin-top: 45px;
     }
+    &:hover {
+        border: 2px solid $colorGray;
+    }
 }
 
 .first__page__center__right__container__button__basket {
@@ -334,6 +343,9 @@ nav {
     @include _350 {
         @include absolute(790px, 30px);
     }
+    &:hover {
+        border: 2px solid $colorGray;
+    }
 }
 
 .first__page__center__right__container__button__logoshield {
@@ -346,6 +358,9 @@ nav {
     outline: none;
     @include _350 {
         @include absolute(795px, 190px);
+    }
+    &:hover {
+        border: 2px solid $colorGray;
     }
 }
 
@@ -494,6 +509,9 @@ nav {
     @include _350 {
         margin-left: 5px;
     }
+    &:hover {
+        border: 2px solid $colorGray;
+    }
 }
 
 .first__page__center__right__container__payment {
@@ -505,6 +523,7 @@ nav {
     border-radius: 23px;
     @include _350 {
         @include absolute(780px, 0px);
+        width: 90%;
     }
 }
 
@@ -512,7 +531,10 @@ nav {
     width: 368px;
     border-bottom: 1px solid #E5EFFF;    
     position: relative;
-    padding-bottom: 25px;    
+    padding-bottom: 25px; 
+    @include _350 {
+        width: 80%;
+    }   
 }
 
 .sistem__bank {        
@@ -631,35 +653,63 @@ nav {
     @include _350 {
         width: 100%;
         padding-top: 1000px;
+        padding-bottom: 5px;
     }
 }
 
-.second__page__blockone {
+.second__page__block {
+    margin-left: 70px;
     width: 430px;
     height: 600px;
     float: left;
-    margin-left: 220px;
     position: relative;
     @include _350 {
         width: 100%;
-        margin-left: 5px;
+        height: auto;
+        .main__img {
+            width: 98%;
+        }
+        .first__main__img {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+.blockone {
+    margin-left: 220px;
+    @include _350 {
+        margin-left: 0;
     }
 }
 
 .second__page__blockone__applePay {
     @include absolute(40px, -30px);
+    @include _350 {
+        @include absolute(40px, 10px);
+    }
 }
 
 .second__page__block__text {
     margin-left: 50px;
     margin-top: -20px;
     width: 440px;
+    @include _350 {
+        float: left;
+        text-align: center;
+        margin-left: 0;
+        width: 95%;
+        padding: 100px 0 0 0;
+    }
 }
 
 .second__page__block__title {
     @include header__text();  
     font-size: 36px;
     text-align: left;
+    @include _350 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
 }
 .second__page__block__title__subtitle {
     margin-top: -20px;
@@ -677,6 +727,9 @@ nav {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+    @include _350 {
+        @include absolute(100px, 10px);
+    }
 }
 
 .second__page__blockone__changing__title {
@@ -766,54 +819,83 @@ nav {
     font-size: 9px;
 }
 
-.second__page__blocktwo {    
-    width: 430px;
-    height: 600px;
-    float: left;
-    margin-left: 70px;
+.blocktwo {    
     margin-top: 75px;
-    position: relative
+    @include _350 {
+        margin-left: 0;
+    }
 }
 
 .facebooklogo {
     @include absolute(110px, 50px);
+    @include _350 {
+        width: 50%;
+        @include absolute(110px, -40px);
+    }
 }
 
 .googleAdslogo {
     @include absolute(249px, 153px);
+    @include _350 {
+        width: 50%;
+        @include absolute(130px, 150px);
+    }
 }
 
 .jetpacklogo {
     @include absolute(140px, 229px);
+    @include _350 {
+        width: 50%;
+        @include absolute(-20px, 150px);
+    }
 }
 
 .mailchimplogo {
     @include absolute(25px, 289px);
+    @include _350 {
+        width: 50%;
+        @include absolute(220px, 50px);
+    }
 }
 
 .squarelogo {    
     @include absolute(-40px, 50px);
+    @include _350 {
+        width: 50%;
+        @include absolute(-40px, -40px);
+    }
 }
 
-.second__page__blockthree {
-    width: 430px;
-    height: 600px;
-    float: left;
-    margin-left: 70px;
+.blockthree {
     margin-top: 150px;
-    position: relative
+    @include _350 {
+        margin-top: 50px;
+        margin-left: 0;
+    }
 }
 
 .photooneblockthree {
     @include absolute(-130px, 270px);
+    @include _350 {
+        width: 50%;
+        @include absolute(140px, 160px);
+    }
 }
 
 .phototwoblockthree {
     @include absolute(-50px, 30px);
+    @include _350 {
+        width: 50%;
+        @include absolute(-50px, -30px);
+    }
 }
 
 .photothreeblockthree {
     @include absolute(115px, 325px);
+    @include _350 {
+        width: 50%;
+        @include absolute(180px, 0px);
+    }
 }
 
 // Third page
@@ -824,6 +906,9 @@ nav {
     height: 1110px;
     background: url("../img/thirdpage/woo.svg") no-repeat top right, $colorViolet;
     position: relative;
+    @include _350 {
+        margin-top: 1450px;
+    }
     &::before {
         @include absolute(-30px, 0);
         width: 100%;
@@ -844,10 +929,16 @@ nav {
 
 .third__page__center__table__one {
     @include absolute(376px, 250px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .third__page__center__table__two {
     @include absolute(752px, 1595px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .third__page__circle__one {
@@ -860,12 +951,18 @@ nav {
     @include absolute(172px, 237px);
     width: 401px;
     height: 401px;
+    @include _350 {
+        display: none;
+    }
 }
 
 .third__page__circle__three {
     @include absolute(536px, 1441px);
     width: 262px;
     height: 262px;
+    @include _350 {
+        display: none;
+    }
 }
 
 .third__page__circle__four {
@@ -873,6 +970,9 @@ nav {
     width: 65px;
     height: 65px;
     z-index: 3;
+    @include _350 {
+        @include absolute(550px, 10px);
+    }
 }
 
 .background__circle {
@@ -884,24 +984,44 @@ nav {
 .third__page__planing {
     @include absolute(520px, 1070px);
     z-index: 2;
+    @include _350 {
+        @include absolute(510px, 100px);  
+        width: 60%;
+    }
 }
 
 .third__page__chinaGirls {
     @include absolute(-50px, 300px);  
     z-index: 2;
+    @include _350 {
+        @include absolute(-10px, 5px);  
+        width: 60%;
+    }
 }
 
 .text__one {
     @include absolute(97px, 845px); 
+    @include _350 {
+        position: static;
+    }
 }
 
 .text__two {
     @include absolute(590px, 595px); 
+    @include _350 {
+        position: static;
+    }
 }
 
 .third__page__information {
     width: 485px;
     height: 400px;
+    @include _350 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-top: 230px;
+    }
 }
 
 .third__page__title {
@@ -911,6 +1031,10 @@ nav {
     font-size: 36px;
     line-height: 46px;
     color: #FFFFFF;
+    @include _350 {
+        width: 100%;
+        z-index: 6;
+    }
 }
 
 .third__page__subtitle {
@@ -931,6 +1055,9 @@ nav {
     color: #FFFFFF;
     border: none;
     outline: none;
+    &:hover {
+        border: 2px solid $colorGray;
+    }
 }
 
 //fourth__page
@@ -941,44 +1068,76 @@ nav {
     height: 1209px;
     background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
     position: relative;
+    @include _350 {
+        margin-top: 50px;
+        height: 700px;
+    }
 }
 
 .fourth__page__table__one {  
-    @include absolute(660px, 450px);  
+    @include absolute(660px, 450px);
+    @include _350 {
+        display: none;
+    }  
 }
 
 .fourth__page__table__two {    
     @include absolute(407px, 1342px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fourth__page__photo11 {
     @include absolute(223px, 391px);
+    @include _350 {
+        @include absolute(450px, 100px);
+    }
 }
 
 .fourth__page__photo12 {
     @include absolute(438px, 102px);
+    @include _350 {
+        @include absolute(70px, 20px);
+    }
 }
 
 .fourth__page__photo13 {
     @include absolute(780px, 256px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fourth__page__photo21 {
     @include absolute(209px, 1378px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fourth__page__photo22 {
-    @include absolute(466px, 1533px);    
+    @include absolute(466px, 1533px); 
+    @include _350 {
+        display: none;
+    }   
 }
 
 .fourth__page__photo23 {
     @include absolute(844px, 1435px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fourth__page__header__text {
     @include header__text();
     padding-top: 138px;
     width: 530px;
+    @include _350 {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .fourth__page__information {
@@ -992,6 +1151,12 @@ nav {
     border-radius: 20px;
     z-index: 3;
     position: relative;
+    @include _350 {
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
     &::before {  
         @include absolute(391px, 26px);   
         border-radius: 0 0  20px 20px;
@@ -999,6 +1164,13 @@ nav {
         width: 678px;
         height: 28px;
         z-index: 2;
+        @include _350 {
+            margin-top: 100px;
+            width: 90%;
+            bottom: -28px;
+            left: 5%;
+            top: auto;
+        }
     }
     &::after {  
         @include absolute(419px, 56px);   
@@ -1007,6 +1179,9 @@ nav {
         width: 618px;
         height: 20px;
         z-index: 2;
+        @include _350 {
+            display: none;
+        }
     }
 }
 
@@ -1017,6 +1192,11 @@ nav {
     text-align: center;
     color: #94A2B3;
     padding: 106px 82px 87px 82px;
+    @include _350 {
+        padding: 10px 10px;
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 .fourth__page__information__forward__arrow {
@@ -1025,6 +1205,9 @@ nav {
     height: 2px;
     background: rgb(127, 127, 127);
     transition: .4s;
+    @include _350 {
+        @include absolute(270px, 210px);
+    }
     &:before {
         @include absolute(-3px, 23px);
         width: 10px;
@@ -1048,6 +1231,9 @@ nav {
         height: 4px;
         background: #000;
         transition: .4s;
+        @include _350 {
+            @include absolute(268px, 191px);
+        }
     }
 
     &:hover:before {
@@ -1074,6 +1260,9 @@ nav {
     height: 2px;
     background: rgb(127, 127, 127);
     transition: .4s;
+    @include _350 {
+        @include absolute(270px, 80px);
+    }
     &:before {
         @include absolute(-3px, -3px);
         width: 10px;
@@ -1097,6 +1286,9 @@ nav {
         height: 4px;
         background: #000;
         transition: .4s;
+        @include _350 {
+            @include absolute(268px, 80px);
+        }
     }
 
     &:hover:before {
@@ -1123,20 +1315,33 @@ nav {
     height: 1495px;
     position: relative;
     background: url("../img/fifthpage/backgroundcircle.svg") no-repeat center top 265px;
+    @include _350 {
+        background: none;
+        height: auto;
+    }
 }
 
 .fifth__page__table__one {
     @include absolute(386px, 83px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fifth__page__table__two {
     @include absolute(257px, 1566px);
+    @include _350 {
+        display: none;
+    }
 }
 
 .fifth__page__header__title {    
     @include header__text();
     margin-top: -35px;
     width: 650px;
+    @include _350 {
+        width: 100%;
+    }
 }
 
 .fifth__page__header__subtitle {
@@ -1148,6 +1353,9 @@ nav {
     line-height: 25px;
     text-align: center;
     color: #94A2B3;
+    @include _350 {
+        width: 100%;
+    }
 }
 
 .fifth__page__circle__one {   
@@ -1166,10 +1374,18 @@ nav {
     @include absolute(167px, 1614px);
     width: 43px;
     height: 43px;
+    @include _350 {
+        display: none;
+    }
 }
 
 .fifth__page__people {
     @include absolute(132px, 305px);
+    @include _350 {
+        position: static;
+        width: 100%;
+        padding-top: 150px;
+    }
 }
 
 .fifth__page__block__getStarted {
@@ -1177,6 +1393,9 @@ nav {
     width: 100%;
     height: 261px;
     background-color: #5F37EF;
+    @include _350 {
+        margin-top: -4px;
+    }
 }
 
 .fifth__page__block__getStarted__text {
@@ -1187,6 +1406,13 @@ nav {
     font-size: 36px;
     line-height: 52px;
     color: #FFFFFF;
+    @include _350 {
+        text-align: center;
+        padding-top: 40px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 .fifth__page__block__getStarted__button {
@@ -1204,6 +1430,16 @@ nav {
     color: #fff;
     outline: none;
     background-color: transparent;
+    @include _350 {
+        float: none;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+    &:hover {
+        border: 2px solid $colorGray;
+    }
 }
 
 .fifth__page__block__aboutus {    
@@ -1211,19 +1447,32 @@ nav {
     height: 741px;
     background-color: $colorViolet;
     position: relative;
+    @include _350 {
+        height: auto;
+    }
     &::after {
         @include absolute(326px, 220px);
         width: 1480px;
         height: 0;
         border-bottom: 1px solid #9A7DFF;
+        @include _350 {
+            display: none;
+        }
     }
 }
 
-.fifth__page__block__aboutus__block {
+.fifth__page__block__aboutus__block {    
+    @include _350 {
+        text-align: center;
+    }
     img {
         float: left;
         padding-left: 118px;
         padding-top: 45px;
+        @include _350 {
+            float: none;
+            padding: 0;
+        }
     }
     p {
         padding-top: 40px;
@@ -1233,10 +1482,18 @@ nav {
         font-size: 20px;
         line-height: 52px;
         color: #FFFFFF;
+        @include _350 {
+            float: none;
+            padding: 0;
+        }
     }
     &:first-child {
         img {
             padding-left: 348px;
+            @include _350 {
+                padding: 0;
+                padding-top: 20px;
+            }
         }
     }
 }
@@ -1244,6 +1501,11 @@ nav {
 .fifth__page__block__aboutus__logo {
     margin-left: 868px;
     margin-top: 140px;
+    @include _350 {
+        margin: 0;
+        width: 80%;
+        padding: 10%;
+    }
 }
 
 .fifth__page__block__aboutus__table {
@@ -1252,27 +1514,48 @@ nav {
     font-family: $ffRoboto;
     font-weight: bold;
     color: #FFFFFF;
+    @include _350 {
+        padding: 20px 0;        
+    }
     thead {
         font-size: 14px;
         line-height: 52px;
         text-transform: uppercase;
+        @include _350 {
+            font-size: 7px;
+            line-height: 9px;
+        }
     }
     tbody {
         font-size: 12px;
         line-height: 22px;
         font-weight: normal;
+        @include _350 {
+            font-size: 6px;
+            line-height: 8px;
+        }
     }
     td {
         padding: 0 69px;
+        @include _350 {
+            padding: 0 2px;
+        }
     }
 }
 
 .fifth__page__block__footer {
     padding-left: 194px;
+        @include _350 {
+            padding: 0 2px;
+        }
     img {
         display: inline;
-        padding-top: 26px;
+        padding-top: 26px ;
         padding-left: 54px;
+        @include _350 {
+            padding-left: 42px;
+            padding-bottom: 5px;
+        }
     }
     p {
         padding: 0 346px 0 283px;
@@ -1281,5 +1564,18 @@ nav {
         font-size: 12px;
         line-height: 22px;
         color: $mainTextColor;
+        @include _350 {
+            display: block;
+            text-align: center;
+            padding: 0;
+            padding-bottom: 10px;
+        }
+    }
+    .fifth__page__block__footer__automattic {        
+        @include _350 {
+            display: block;
+            padding: 0;
+            margin: 0 auto;
+        }
     }
 }
